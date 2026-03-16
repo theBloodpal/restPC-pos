@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bgMain: #f5f6fa;
+  --color-bgCard: #ffffff;
+  --color-textPrimary: #2f3640;
+  --color-textSecondary: #718093;
+  --color-accentGreen: #2ecc71;
+  --color-accentOrange: #ff7f50;
+}
+
+/* This is the magic line that scales down the entire app */
+html {
+  font-size: 85%;
+}
+
+body {
+  background-color: var(--color-bgMain);
+  color: var(--color-textPrimary);
+  margin: 0;
+  padding: 0;
+}

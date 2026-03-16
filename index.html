@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kafe POS - Enterprise</title>
+
+  <script>
+    // Checks local storage immediately to apply dark class before the page renders
+    if (localStorage.getItem('kafe_theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+
+  <style>
+    :root {
+      --bg-main: #f9fafb;
+      --bg-card: #ffffff;
+      --text-primary: #111827;
+      --text-secondary: #6b7280;
+    }
+
+    /* Applied when the 'dark' class is present on the html element */
+    html.dark {
+      --bg-main: #121212;
+      /* True Neutral Dark (No Blue Tint) */
+      --bg-card: #1e1e1e;
+      /* Slightly lighter neutral card */
+      --text-primary: #ffffff;
+      --text-secondary: #a1a1aa;
+      color-scheme: dark;
+    }
+
+    /* FORCED BODY BACKGROUND: Ensures the entire app background stays dark */
+    body {
+      background-color: var(--bg-main) !important;
+      color: var(--text-primary) !important;
+      margin: 0;
+    }
+
+    /* HIJACK TAILWIND CLASSES: Forces standard Tailwind utilities to use our variables */
+    html.dark .bg-white,
+    html.dark .bg-bgCard {
+      background-color: var(--bg-card) !important;
+    }
+
+    html.dark .bg-gray-50,
+    html.dark .bg-bgMain {
+      background-color: var(--bg-main) !important;
+    }
+
+    html.dark .bg-gray-100 {
+      background-color: #27272a !important;
+    }
+
+    html.dark .bg-gray-200 {
+      background-color: #3f3f46 !important;
+    }
+
+    /* Force Primary Text */
+    html.dark .text-textPrimary,
+    html.dark .text-gray-900,
+    html.dark .text-gray-800 {
+      color: var(--text-primary) !important;
+    }
+
+    /* Force Secondary Text */
+    html.dark .text-textSecondary,
+    html.dark .text-gray-600,
+    html.dark .text-gray-500,
+    html.dark .text-gray-400 {
+      color: var(--text-secondary) !important;
+    }
+
+    /* Force Borders to Neutral Dark Gray */
+    html.dark .border-gray-100,
+    html.dark .border-gray-200,
+    html.dark .border-gray-300 {
+      border-color: #3f3f46 !important;
+    }
+
+    /* TAME BRIGHT PASTELS: Softens colored boxes for night use */
+    html.dark .bg-red-50 {
+      background-color: rgba(239, 68, 68, 0.15) !important;
+    }
+
+    html.dark .bg-blue-50 {
+      background-color: rgba(59, 130, 246, 0.15) !important;
+    }
+
+    html.dark .bg-green-50 {
+      background-color: rgba(34, 197, 94, 0.15) !important;
+    }
+
+    html.dark .bg-orange-50 {
+      background-color: rgba(249, 115, 22, 0.15) !important;
+    }
+
+    html.dark .bg-purple-50 {
+      background-color: rgba(168, 85, 247, 0.15) !important;
+    }
+
+    /* GLOWING TEXT: Makes pastel text readable on dark backgrounds */
+    html.dark .text-red-600 {
+      color: #fca5a5 !important;
+    }
+
+    html.dark .text-blue-600 {
+      color: #93c5fd !important;
+    }
+
+    html.dark .text-green-600 {
+      color: #86efac !important;
+    }
+
+    html.dark .text-orange-600 {
+      color: #fdba74 !important;
+    }
+
+    html.dark .text-purple-600 {
+      color: #d8b4fe !important;
+    }
+
+    html.dark .shadow-sm {
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.6) !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

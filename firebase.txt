@@ -1,0 +1,22 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyC2bVfJT1raK2NBCRwvy0YM0i3vdCtUUIk",
+  authDomain: "resturantapp-01.firebaseapp.com",
+  databaseURL: "https://resturantapp-01-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "resturantapp-01",
+  storageBucket: "resturantapp-01.firebasestorage.app",
+  messagingSenderId: "908921648379",
+  appId: "1:908921648379:web:9b6a3fb19d8f61e01b2c5e",
+  measurementId: "G-YM2RM2J33E"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
