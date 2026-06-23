@@ -93,6 +93,8 @@ npx react-native run-android
   <img width="250" alt="Mobile app screen 1" src="https://github.com/user-attachments/assets/a57b4663-c238-46a2-bf69-1360f3bf3a37" />
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img width="250" alt="Mobile app screen 2" src="https://github.com/user-attachments/assets/22f22f75-0f20-4fa9-a0dc-3b87bc0a3edb" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img width="250" alt="Mobile app screen 3" src="https://github.com/user-attachments/assets/8f078df0-abfe-4998-bf71-04acc39312ee" />
 </p>
 
 > - Dark mode toggle
