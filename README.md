@@ -83,22 +83,22 @@ npx react-native run-android
 ## Screenshots
 
 > - Dashboard view
-<img width="800" alt="Dashboard view" src="https://github.com/user-attachments/assets/48f9f10a-3a2d-4b63-a4e0-43bd76bcae0a" />
+<img width="600" alt="Dashboard view" src="https://github.com/user-attachments/assets/48f9f10a-3a2d-4b63-a4e0-43bd76bcae0a" />
 
 > - Order management interface
-<img width="800" alt="Order management interface" src="https://github.com/user-attachments/assets/9db7bd02-54a9-45b2-b76b-e0c6325971eb" />
+<img width="600" alt="Order management interface" src="https://github.com/user-attachments/assets/9db7bd02-54a9-45b2-b76b-e0c6325971eb" />
 
 > - Mobile app screens
 <p align="center">
-  <img width="250" alt="Mobile app screen 1" src="https://github.com/user-attachments/assets/a57b4663-c238-46a2-bf69-1360f3bf3a37" />
+  <img height="400" alt="Mobile app screen 1" src="https://github.com/user-attachments/assets/a57b4663-c238-46a2-bf69-1360f3bf3a37" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img width="250" alt="Mobile app screen 2" src="https://github.com/user-attachments/assets/22f22f75-0f20-4fa9-a0dc-3b87bc0a3edb" />
+  <img height="400" alt="Mobile app screen 2" src="https://github.com/user-attachments/assets/22f22f75-0f20-4fa9-a0dc-3b87bc0a3edb" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img width="250" alt="Mobile app screen 3" src="https://github.com/user-attachments/assets/8f078df0-abfe-4998-bf71-04acc39312ee" />
+  <img height="400" alt="Mobile app screen 3" src="https://github.com/user-attachments/assets/8f078df0-abfe-4998-bf71-04acc39312ee" />
 </p>
 
 > - Dark mode toggle
-<img width="800" alt="Dark mode toggle" src="https://github.com/user-attachments/assets/32c8a8a1-63d1-4f54-b185-a82ed7013f8b" />
+<img width="600" alt="Dark mode toggle" src="https://github.com/user-attachments/assets/32c8a8a1-63d1-4f54-b185-a82ed7013f8b" />
 
 ---
 
