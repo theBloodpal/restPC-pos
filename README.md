@@ -1,16 +1,92 @@
-# React + Vite
+# Restro POS — Restaurant Management Suite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://pcrest-app.vercel.app/)
+![React](https://img.shields.io/badge/React-20232A?logo=react)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase)
+![React Native](https://img.shields.io/badge/React_Native-20232A?logo=react)
 
-Currently, two official plugins are available:
+Production-grade point-of-sale system for restaurants. Cross-platform architecture with real-time sync between desktop (Python/CustomTkinter) and mobile (React Native) clients via Firebase.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## React Compiler
+**Web app:** [pcrest-app.vercel.app](https://pcrest-app.vercel.app/)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Features
 
-## Expanding the ESLint configuration
+- Order processing and billing with real-time sync
+- Inventory tracking across multiple platforms
+- Admin dashboard with analytics and performance metrics
+- Desktop command center (Python/CustomTkinter)
+- Mobile remote oversight (React Native)
+- Dark mode support
+- Cross-platform data integrity via Firebase
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Frontend (Web) | React, Vite, Tailwind CSS |
+| Mobile | React Native |
+| Desktop | Python, CustomTkinter |
+| Database & Sync | Firebase (Realtime DB, Auth) |
+| Deployment | Vercel |
+
+## Architecture
+
+```
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│  Desktop (Py)   │     │  Mobile (RN)    │     │  Web (React)    │
+│  CustomTkinter  │◄───►│  React Native   │◄───►│  Vite + Tailwind│
+│  Order Mgmt     │     │  Remote Access  │     │  Admin Dashboard│
+└────────┬────────┘     └────────┬────────┘     └────────┬────────┘
+         │                      │                       │
+         └──────────────────────┼───────────────────────┘
+                                ▼
+                     ┌──────────────────┐
+                     │    Firebase      │
+                     │  Realtime DB     │
+                     │  Authentication  │
+                     └──────────────────┘
+```
+
+## Setup
+
+### Prerequisites
+- Node.js 18+
+- Python 3.10+
+- Firebase project with Realtime Database enabled
+
+### Web App
+```bash
+cd web
+npm install
+cp .env.example .env  # Add your Firebase config
+npm run dev
+```
+
+### Desktop App
+```bash
+cd desktop
+pip install -r requirements.txt
+python main.py
+```
+
+### Mobile App
+```bash
+cd mobile
+npm install
+npx react-native run-android
+```
+
+## Screenshots
+
+> Add screenshots here:
+> - Dashboard view
+> - Order management interface
+> - Mobile app screens
+> - Dark mode toggle
+
+---
+
+*Built as part of my portfolio at [pcrest-app.vercel.app](https://pcrest-app.vercel.app/)*
